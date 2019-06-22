@@ -1,0 +1,39 @@
+body {
+  background-color: #666;
+}
+
+svg {
+  width: 200%;
+  height: 200%;
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -234.5px;
+  margin-top: -185.5px;
+}
+
+.animated1 {
+  animation: float 3s ease-in-out infinite;
+}
+
+.blink {
+  animation: blink 5s ease-in-out infinite;
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  50% {
+     transform: translate(0, 30px);
+  }
+}
+@keyframes blink {
+  10% {
+     transform: translate(0.5px, 0.5px);
+  }
+  80% {
+     transform: translate(0, 0);
+  }
+}
